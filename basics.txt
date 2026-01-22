@@ -1,0 +1,7 @@
+- library used for complex frontend
+
+==> Why created:
+** Ghost Hunt Problem ( Phantom Message Problem)- Facebook
+- even when read msg, the notification count of no. of message was still shown.
+
+- react don't have router, state management
