@@ -1,4 +1,4 @@
-import Yashvi from "./yashvi.js";
+import Yashvi from "./Yashvi.js";
 function App() {
   return (
     <>
