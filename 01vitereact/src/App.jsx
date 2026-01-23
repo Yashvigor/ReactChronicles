@@ -1,12 +1,11 @@
 import { useState } from 'react'
-
+import Yashvi from "./yashvi"
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-<h1>Chai aur react with Vite|| Yashvi Gor</h1>
+<Yashvi/>
   )
 }
 
