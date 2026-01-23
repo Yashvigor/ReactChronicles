@@ -1,8 +1,8 @@
-import yashvi from "./yashvi.js";
+import Yashvi from "./yashvi.js";
 function App() {
   return (
     <>
-    <yashvi/>
+    <Yashvi/>
     // <h1>chai aur react || Yashvi Gor</h1>
     </>
   );
