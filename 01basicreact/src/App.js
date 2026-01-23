@@ -1,4 +1,4 @@
-import yashvi from './yashvi'
+import yashvi from "./yashvi.js";
 function App() {
   return (
     <>
@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default yashvi;
+export default App;
