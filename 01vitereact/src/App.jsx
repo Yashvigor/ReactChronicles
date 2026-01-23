@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Yashvi from "./yashvi"
+import Yashvi from "./Yashvi.jsx"
 
 
 function App() {
