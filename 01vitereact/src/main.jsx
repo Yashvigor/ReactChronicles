@@ -11,6 +11,7 @@ function MyApp(){
 }
 ReactDOMcreateRoot(document.getElementById('root')).render(
   <StrictMode>
-    <MyApp />
+    MyApp()
+    <MyApp/>
   </StrictMode>,
 )
