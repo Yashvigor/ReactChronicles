@@ -31,9 +31,12 @@ const reactElement = React.createElement(
   'click to visit google' //direct text
 )
 ReactDOMcreateRoot(document.getElementById('root')).render(
-  <StrictMode>
-   // MyApp()
-    {/* anotherElement  */}
-    reactElement
-  </StrictMode>,
+  // <StrictMode>
+  //   // MyApp()
+  //   {/* anotherElement  */}
+  //   reactElement
+  // </StrictMode>
+
+  <App/>
+
 )
