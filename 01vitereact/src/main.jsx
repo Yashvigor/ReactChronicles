@@ -9,7 +9,7 @@ function MyApp(){
     </div>
   )
 }
-
+const anotherUser= "chai aur react"
 // const ReactElement = {
 //     type: 'a',
 //     props:{
@@ -28,13 +28,14 @@ const reactElement = React.createElement(
     href: 'https://google.com',
     target: '_blank',
   } //object
-  'click to visit google' //direct text
+  'click to visit google', //direct text
+  anotherUser
 )
 ReactDOMcreateRoot(document.getElementById('root')).render(
   // <StrictMode>
   //   // MyApp()
   //   {/* anotherElement  */}
-  //   reactElement
+     reactElement
   // </StrictMode>
 
   <App/>
