@@ -1,7 +1,7 @@
-function Chai(){
+function Yashvi(){
     return(
-        <h3>chai is ready</h3>
+        <h3>Yashvi Gor</h3>
     )
 }
 
-export default Chai
+export default Yashvi
