@@ -1,6 +1,4 @@
-
-
-import Chai from "./chai"
+import Yashvi from "./Yashvi"
 
 
 function App() {
@@ -8,7 +6,7 @@ function App() {
 
   return (
     <>
-    <Chai/>
+    <Yashvi/>
     <h1>chai aur react {username}</h1>
     <p>test para</p>
    </>
