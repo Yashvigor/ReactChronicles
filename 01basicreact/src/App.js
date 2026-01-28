@@ -1,10 +1,10 @@
 
-import Chai from "./Chai";
+import Yashvi from "./Yashvi";
 
 function App() {
   return (
     <>
-    <Chai/>
+    <Yashvi/>
     
     </>
   );
