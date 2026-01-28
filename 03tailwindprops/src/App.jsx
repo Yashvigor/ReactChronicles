@@ -10,13 +10,13 @@ function App() {
     username: "yashvi",
     age: 21
   }
-  let newArr = [1, 2, 3]
+  let newArr = [1, 2, 3] 
 
   return (
-    <>
+    <> //fragment
       <h1 className='bg-green-400 text-black p-4 rounded-xl mb-4'>Tailwind test</h1>
-      <Card username="yashvigor" btnText="click me" />
-      <Card username="yashvi" />
+      <Card username="yashvi gor" btnText="click me" />
+      <Card username="mauli rami" />
     </>
   )
 }
