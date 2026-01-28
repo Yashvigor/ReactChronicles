@@ -1,6 +1,6 @@
 function Yashvi(){
     return(
-        <h2>chai in react</h2>
+        <h2>Yashvi Gor</h2>
     )
 }
 
