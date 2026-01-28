@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card({username, btnText="visit me"}) {
+function Card({username, btnText="visit me"}) // by default we can put props also but to avoid writing props.username again and again we can directly use username here but it also wroks same only.{ 
     console.log(username);
   return (
     <div className="relative h-[400px] w-[300px] rounded-md ">
