@@ -1,7 +1,7 @@
-function Chai(){
+function Yashvi(){
     return(
         <h2>chai in react</h2>
     )
 }
 
-export default Chai
+export default Yashvi
