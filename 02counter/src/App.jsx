@@ -11,15 +11,14 @@ function App() {
     setCounter(counter + 1);
     console.log("Value added", counter);
 
-    // These updates will not work as expected.
+    
     // React batches multiple state updates for better performance.
-    // Since all these updates use the same 'counter' value,
-    // React treats them as one update, and the counter increases only by 1.
+    // Since all these updates use the same 'counter' value, React treats them as one update, and the counter increases only by 1.
+    // setCounter(counter + 1); updates to same ounter value
     // setCounter(counter + 1);
     // setCounter(counter + 1);
     // setCounter(counter + 1);
-    // setCounter(counter + 1);
-
+    
     // Use the callback form of setCounter to access the latest updated value.
     // Each update here receives the most recent state (prevCounter),
     // so all four updates will be applied one after another.
