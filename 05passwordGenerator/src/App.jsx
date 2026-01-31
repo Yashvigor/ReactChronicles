@@ -10,23 +10,25 @@ function App() {
 
   //useRef hook
   const passwordRef = useRef(null)
-
+  // UseCallBack: hook that lets us cache(memory) a function definition between re-renders.
+  // In a callback function dependencies can be passed. Dependencies are no other than the function or states which we want to update and that should be re-rendered.
+  // Dependencies are array in which variables will be passed. 
   const passwordGenerator = useCallback(() => {
     let pass = ""
-    let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
-    if (numberAllowed) str += "0123456789"
-    if (charAllowed) str += "!@#$%^&*-_+=[]{}~`"
+    let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" // the string from which password will be created initially.
+    if (numberAllowed) str += "0123456789" // if we click on number's checkbox then it will be appended.
+    if (charAllowed) str += "!@#$%^&*-_+=[]{}~`" // if we click on character's checkbox then it will be appended.
 
     for (let i = 1; i <= length; i++) {
-      let char = Math.floor(Math.random() * str.length + 1)
-      pass += str.charAt(char)
+      let char = Math.floor(Math.random() * str.length + 1) // it brings the index randomly from str
+      pass += str.charAt(char) // adding that character to password.
       
     }
 
     setPassword(pass)
 
 
-  }, [length, numberAllowed, charAllowed, setPassword])
+  }, [length, numberAllowed, charAllowed, setPassword]) //Array of dependencies
 
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();
@@ -44,10 +46,10 @@ function App() {
     <div className="flex shadow rounded-lg overflow-hidden mb-4">
         <input
             type="text"
-            value={password}
+            value={password} 
             className="outline-none w-full py-1 px-3"
             placeholder="Password"
-            readOnly
+            readOnly 
             ref={passwordRef}
         />
         <button
