@@ -1,5 +1,5 @@
 import React, {useId} from 'react'
-
+// useId hook: hook for generating uique IDs that can be passed to accessibility attributes. 
 function InputBox({
     label,
     amount,
@@ -20,7 +20,7 @@ function InputBox({
                     {label}
                 </label>
                 <input
-                    id={amountInputId}
+                    id={amountInputId} // binding with input ID.
                     className="outline-none w-full bg-transparent py-1.5"
                     type="number"
                     placeholder="Amount"
