@@ -26,7 +26,7 @@ function InputBox({
                     placeholder="Amount"
                     disabled={amountDisable}
                     value={amount}
-                    onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))}
+                    onChange={(e) => onAmountChange && onAmountChange(Number(e.target.value))} // checking for existence of amount change. As s treats events value as strings so we need to explicitly cast it to Number. 
                 />
             </div>
             <div className="w-1/2 flex flex-wrap justify-end text-right">
@@ -40,7 +40,7 @@ function InputBox({
                     
                         {currencyOptions.map((currency) => (
                             <option key={currency} value={currency}>
-                            {currency}
+                            {currency} // when an loop is applied to jsx as elements are made from jsx, so we need to pass key to improve performance. 
                             </option>
                         ))}
                 
