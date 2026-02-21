@@ -1,6 +1,9 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
 
+// Link : in place of a tag, when a tag is used whole page is refreshed but in react there is no refresh, through dom directly new value is injected.
+// NavLink : Additional things are provided. 
+
 export default function Header() {
     return (
         <header className="shadow sticky z-50 top-0">
@@ -43,9 +46,10 @@ export default function Header() {
                                 </NavLink>
                             </li>
                             <li>
+                                //isActive: compares with url to find out currently active page. 
                                 <NavLink
                                 to="/about"
-                                    className={({isActive}) =>
+                                    className={({isActive}) => 
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
